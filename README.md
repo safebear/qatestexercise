@@ -20,6 +20,9 @@ Just to make your life easier (e.g for viewing the ASCIIDOCs), however you can u
 
 ## Cypress Tests
 
+`npm install`
+`npm run cypress:open`
+
 ### Create Computer
 
 ### Read Computer
