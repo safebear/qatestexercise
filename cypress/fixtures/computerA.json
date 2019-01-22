@@ -1,0 +1,7 @@
+{ 
+    "name": "A computer",
+    "introduced_date": "1999-01-01",
+    "discontinued_date": "1999-01-02",
+    "company": "Thinking Machines",
+    "company_value": "2"
+}

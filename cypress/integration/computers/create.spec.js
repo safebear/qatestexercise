@@ -5,11 +5,11 @@ context('create computer', () => {
         cy.visit('/computers')
       })
 
-
+    // Here's our test  
     it('adds a new computer', () => {
 
         // Get our 'computer.json' test data from the 'fixtures' folder
-        cy.fixture('computer').then((computer) => {
+        cy.fixture('computerA').then((computer) => {
             
             // Click on the 'Add a new computer' button
             cy.get('#add').click();

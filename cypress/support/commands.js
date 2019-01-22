@@ -23,3 +23,30 @@
 //
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+
+// Check to see if the computer is present. If not, create it.
+// This is all done with HTTP requests as we're not testing
+// our pre-reqs
+Cypress.Commands.add("createComputer", (computer) => {
+    cy.request('http://computer-database.herokuapp.com/computers?f=' + computer.name)
+    .then((response) => {
+        if (response.body.includes('Nothing to display')) {
+            cy.request({
+                method: 'POST',
+                url: '/computers', // baseUrl is prepended to url
+                form: true, // indicates the body should be form urlencoded and sets Content-Type: application/x-www-form-urlencoded headers
+                body: {
+                  name: computer.name,
+                  introduced: computer.introduced_date,
+                  discontinued: computer.discontinued_date,
+                  company: 2
+                }
+              })
+              .should((response) => {
+                expect(response.status).to.eq(200)
+            })
+            
+        }
+    })
+})
