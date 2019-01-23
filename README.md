@@ -18,6 +18,14 @@ ADD EXTENSIONS HERE
 
 Just to make your life easier (e.g for viewing the ASCIIDOCs), however you can use whatever JavaScript IDE you wish.
 
+## Requirements
+
+The following requirements are needed:
+
+1. NodeJS version 10.x
+
+
+
 ## Cypress Tests
 
 `npm install`
