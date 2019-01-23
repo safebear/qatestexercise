@@ -71,11 +71,13 @@ It can also be incorporated into your application project structure.
 
 Cypress also allows you to stub out your server, send `before` pre-reqs as HTTP requests and lots lots more. It's very useful for devs also. I also love the error messages, which are helpful and informative, unlike most tools.
 
+[BDD Feature Files with Gherkin Syntax](https://www.npmjs.com/package/cypress-cucumber-preprocessor) is also possible with Cypress, but I didn't have time to set it up here. 
+
 The only disadvantage is that it currently only supports Chrome, but a wider browser support is planned for the end of the year.
 
 [TestCafe](https://github.com/DevExpress/testcafe) is another (non-selenium) automation test tool which is gathering a lot of praise. It does support cross-browser testing and can be used with `Grunt` and `Gulp` if you need to inject the database with test data before running your tests. Cypress can only do this by running `batch` or `shell` scripts on your computer.
 
-## Exploratory Tests
+## Exploratory (Manual) Tests
 
 ***NOTE:*** Please install the latest `AsciiDoc` extension (by João Pinto) in VSCode in order to view the formatted version of these files.
 
