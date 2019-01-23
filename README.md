@@ -100,9 +100,11 @@ The main disadvantage of Cypress is that it currently only supports the Chrome b
 
 ### Test Records
 
-The exploratory tests can be found in `docs > exploratory_tests > computer_crud > create_computer_record.adoc`. In order to view the formatted version, press `ctrl+shift+v` and the document will be generated.
+The exploratory tests can be found in `docs > exploratory_tests > computer_crud > create_computer_record.adoc`. In order to view the formatted version, press `ctrl+shift+v` and the document will be generated.*
 
 This file contains the `record` of the exploratory testing that has taken place. I've put a table and some short explanations in the document as an example. I've only created a record for `creating` a computer, but there will also be records for exploratory testing around `deleting`, `updating` and `reading` a computer and any other user journeys.
+
+* AsciiDoc files also render nicely in GitHub, so you can take a look at them there.
 
 ### Guides
 
@@ -110,6 +112,6 @@ In the `docs > exploratory_tests > guides` folder, I've also included a `tools&t
 
 ### Why AsciiDoc?
 
-I've used AsciiDoc as it ensures that the records and guides are under code control and maintained in the project. It can also be easily exported into `PDF`, `HTML` or many other formats for review or reporting. It's also more powerful that Markdown. However Markdown is an acceptable alternative, especially as it renders in `github`.
+I've used AsciiDoc as it ensures that the records and guides are under code control and maintained in the project. It can also be easily exported into `PDF`, `HTML` or many other formats for review or reporting. It's also more powerful that Markdown.
 
 Creating documents like these as `living documentation` ensures that no-one is afraid to make changes or improvements as the project develops, which alloows the team to innovate and quickly adapt to challenges.
