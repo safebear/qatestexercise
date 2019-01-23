@@ -9,12 +9,12 @@ context('delete computer', () => {
         cy.fixture('computerA').then((computer) => {
             cy.createComputer(computer);
         })
-        // Look in the 'commands.js' file in the 'support' folder for the
+        // Look in the 'commands.js' file in the 'cypress > support' folder for the
         // code I wrote for this.
 
       })
 
-      it('deletes a computer', () => {
+      it('delete a computer', () => {
 
         cy.fixture('computerA').then((computer) => {
             // Filter on the computer name 
@@ -30,11 +30,12 @@ context('delete computer', () => {
             // the button can be covered by the black header if you scroll down on this page
 
              // Filter on the computer name again
-             cy.get('#searchbox').type(computer.name);
-             cy.get('#searchsubmit').click();
+             // cy.get('#searchbox').type(computer.name); // alternate way
+             // cy.get('#searchsubmit').click(); // alternate way
 
              // Check that the computer is no longer present
-             cy.get('em').should('contain', 'Nothing to display');
+             // cy.get('em').should('contain', 'Nothing to display'); // alternate way
+             cy.get('.alert-message.warning').should('contain', 'Computer has been deleted');
 
         })
 

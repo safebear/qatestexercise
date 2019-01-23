@@ -9,12 +9,12 @@ context('read computer', () => {
         cy.fixture('computerA').then((computer) => {
             cy.createComputer(computer);
         })
-        // Look in the 'commands.js' file in the 'support' folder for the
+        // Look in the 'commands.js' file in the 'cypress > support' folder for the
         // code I wrote for this.
 
       })
 
-      it('reads the computer content', () => {
+      it('read a computers details', () => {
 
         cy.fixture('computerA').then((computer) => {
             // Filter on the computer name 

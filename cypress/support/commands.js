@@ -25,13 +25,14 @@
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
 
-// Check to see if the computer is present. If not, create it.
-// This is all done with HTTP requests as we're not testing
-// our pre-reqs
+// Cypress will send HTTP requests to check to see if the computer is present. If not, create it.
 Cypress.Commands.add("createComputer", (computer) => {
+    // Filter on the computer name
     cy.request('http://computer-database.herokuapp.com/computers?f=' + computer.name)
     .then((response) => {
+        // If the response is empty
         if (response.body.includes('Nothing to display')) {
+            // Send a POST request to create the computer
             cy.request({
                 method: 'POST',
                 url: '/computers', // baseUrl is prepended to url
@@ -43,6 +44,7 @@ Cypress.Commands.add("createComputer", (computer) => {
                   company: 2
                 }
               })
+              // Check that this was accepted by the server (200 ok)
               .should((response) => {
                 expect(response.status).to.eq(200)
             })

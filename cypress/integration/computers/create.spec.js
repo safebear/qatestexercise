@@ -1,32 +1,33 @@
 context('create computer', () => {
 
-    // The base url is set in the 'cypress.json' file. We just need the 'computers' page.
+    // The base url is set in the 'cypress.json' file in the root directory of the project. 
+    // We just need to state here that we want the 'computers' page.
     beforeEach(() => {
         cy.visit('/computers')
       })
 
     // Here's our test  
-    it('adds a new computer', () => {
+    it('add a new computer', () => {
 
-        // Get our 'computer.json' test data from the 'fixtures' folder
+        // Get our 'computer.json' test data from the 'cypress > fixtures' folder
         cy.fixture('computerA').then((computer) => {
             
-            // Click on the 'Add a new computer' button
+            // Step 1: Click on the 'Add a new computer' button
             cy.get('#add').click();
 
             // and check we're now on the 'add computer page'
             cy.url().should('include', '/new');
         
-            // fill out the form with the test data
+            // Step 2: fill out the form with the test data
             cy.get('#name').type(computer.name);
             cy.get('#introduced').type(computer.introduced_date);
             cy.get('#discontinued').type(computer.discontinued_date);
             cy.get('#company').select(computer.company);
 
-            // Click on 'create this computer' button
+            // Step 3: Click on 'create this computer' button
             cy.get('[value="Create this computer"]').click();
 
-            // Check that it's been added
+            // Step 4: Check that it's been added
             cy.get('.alert-message.warning').should('contain', computer.name);
         
             // Simples

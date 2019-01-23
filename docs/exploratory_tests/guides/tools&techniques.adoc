@@ -1,0 +1,57 @@
+= Tools and Techniques for Exploratory Testing
+
+Below are a list of useful tools and techniques for your exploratory tests:
+
+== Techniques
+
+=== SFDPO
+
+* *Structure* (what the software is): What are its components?
+* *Function* (what the software does): What are its functions from both the business and user perspective?
+* *Data* (what the software processes): What input does it accept and what is the expected output? Is input sequence sensitive? Are there multiple modes-of-being?
+* *Platform* (what the software depends on): What operating systems does it run on? Does the environment specify a configuration to work? Does it depend on third-party components?
+* *Operations* (how the software will be used): Who will use it? Where and how will they use it? What will they use it for?
+
+=== Personas
+
+Personas are a tool that helps the tester adopt the habits (and feelings) of different types of users. During exploratory testing, personas help us to discover different types of problems resulting from different types of user behavior. 
+
+See http://katrinatester.blogspot.com/search?q=personas
+
+=== Mind Maps
+
+Each tester will have their personal process for setting up an exploratory testing session. It can be helpful to start with a plan of what they’d like to achieve in the session or the most important areas or requisites to review and explore. A mind map can help visualize the potential starting points, especially when combined with the SFDPO heuristic. Mind maps also help a tester circle around after following a deviation.
+
+== Tools
+
+Below are some recommended tools for exploratory testing
+
+|====
+|Type|Tool Name|Link
+
+|Screen capture tool
+|Screencastify
+|https://www.screencastify.com/
+
+|Exploratory Testing Assistant
+|Bug magnet
+|https://github.com/gojko/bugmagnet
+
+|Web session manipulation
+|Fiddler
+|https://www.telerik.com/fiddler
+
+|Service Virtualisation
+|Cypress
+|https://www.cypress.io/
+
+|Service Virtualisation
+|Cypress
+|https://www.cypress.io/
+
+|Service Virtualisation
+|Wiremock
+|http://wiremock.org/
+
+|====
+

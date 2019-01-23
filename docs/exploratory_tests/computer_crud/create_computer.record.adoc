@@ -1,0 +1,30 @@
+= Exploratory Test Record: Create Computer
+
+The table below captures the runs of exploratory testing needed for this piece of application functionality.
+
+. `Run Number` is a unique ID for each run. 
+.. It will be recorded on every JIRA issue raised during the testing.
+. `Description` captures what is being tested or retested.
+. `Retest needed?` is a `yes` or `no` answer.
+.. `yes` = defects were found that will be fixed and need retesting.
+.. `no` = no defects were found that will be fixed or the service was mocked out.
+. `Screen Recording` is the location of the output of a screen capture tool that was running while the exploratory tests were being performed.
+
+NOTE: The screen recordings are usually only kept for 6 months to a year, depending on the frequency of releases.
+
+|====
+|Run|Description|Retest Needed?|Notes|Screen Recording
+
+|CC01
+|Initial Run
+|yes
+|Bugs were found that are being fixed (search JIRA for CC01). Also the backend was mocked using Wiremock.
+|z:\Computer Directory App\Exploratory Testing\Recordings
+
+|CC02
+|Re-run to retest JIRA defects ABC and ZYF.
+|no
+|A complete exploratory test was performed again as this time the backend wasn't mocked.
+|z:\Computer Directory App\Exploratory Testing\Recordings
+
+|====
