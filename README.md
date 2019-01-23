@@ -1,4 +1,4 @@
-# CRUD TEST CASES: Online Database
+# Online Computer Database: CRUD Test Cases
 
 This readme is split into the following sections:
 
@@ -75,7 +75,10 @@ Cypress also allows you to stub out your server, send `before` pre-reqs as HTTP 
 
 The only disadvantage is that it currently only supports Chrome, but a wider browser support is planned for the end of the year.
 
-[TestCafe](https://github.com/DevExpress/testcafe) is another (non-selenium) automation test tool which is gathering a lot of praise. It does support cross-browser testing and can be used with `Grunt` and `Gulp` if you need to inject the database with test data before running your tests. Cypress can only do this by running `batch` or `shell` scripts on your computer.
+[TestCafe](https://github.com/DevExpress/testcafe) is another (non-selenium based) automation test tool which is gathering a lot of praise. It does support cross-browser testing and can be used with `Grunt` and `Gulp` if you need to inject the database with test data before running your tests. Cypress can only do this by running `batch` or `shell` scripts on your computer.
+
+***Should You Replace Selenium/Protractor/WebDriverIO with these Tools?***
+They're certainly worth a look. If you want to adopt them, that's up to you!
 
 ## Exploratory (Manual) Tests
 
