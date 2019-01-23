@@ -106,7 +106,7 @@ This file contains the `record` of the exploratory testing that has taken place.
 
 ### Guides
 
-In the `docs > exploratory_tests > guides` folder, I've also included a `tools&techniques.adoc` file to help exploratory testers doing their job, and made some notes in there as an example. This is a living document, and will therefore grow as more knowledge is shared/added (e.g. with more information around negative and boundary testing than I've had time to put in there).
+In the `docs > exploratory_tests > guides` folder, I've also included a `tools&techniques.adoc` file to help exploratory testers do their job, and made some notes in there as an example. This is a living document, and will therefore grow as more knowledge is shared/added (e.g. with more information around negative and boundary testing than I've had time to put in there).
 
 ### Why AsciiDoc?
 
