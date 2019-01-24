@@ -39,7 +39,7 @@ These can be run in any order or run individually - I've written them so they do
 
 ### Test Speed
 
-Cypress runs a lot faster than Selenium, because it runs natively in the browser. On my laptop these 4 UI tests run in 9 seconds. This means that 400 user journey tests like these would take 15 minutes, which isn't bad. 
+Cypress runs a lot faster than Selenium, because it runs natively in the browser. On my laptop these 4 UI tests run in 10 seconds. This means that 400 user journey tests like these would take 17 minutes, which isn't bad. 
 
 ### Test Code
 
@@ -96,19 +96,27 @@ The main disadvantage of Cypress is that it currently only supports the Chrome b
 
 ## Exploratory (Manual) Tests
 
-***NOTE:*** Please install the latest `AsciiDoc` extension (by João Pinto) in VSCode in order to view the formatted version of these files.
+***NOTE:*** Please install the latest `AsciiDoc` extension (by João Pinto) in VSCode in order to view the formatted version of these files in your IDE.
 
 ### Test Records
 
-The exploratory tests can be found in `docs > exploratory_tests > computer_crud > create_computer_record.adoc`. In order to view the formatted version, press `ctrl+shift+v` and the document will be generated.*
+The exploratory tests can be [viewed on the GitHub repo](https://github.com/safebear/qatestexercise/blob/master/docs/exploratory_tests/computer_crud/create_computer.record.adoc) or in the following directory: 
+
+`docs > exploratory_tests > computer_crud > create_computer_record.adoc`
+
+In order to view the formatted  in your IDE, press `ctrl+shift+v` and the document will be generated.
 
 This file contains the `record` of the exploratory testing that has taken place. I've put a table and some short explanations in the document as an example. I've only created a record for `creating` a computer, but there will also be records for exploratory testing around `deleting`, `updating` and `reading` a computer and any other user journeys.
 
-* AsciiDoc files also render nicely in GitHub, so you can take a look at them there.
-
 ### Guides
 
-In the `docs > exploratory_tests > guides` folder, I've also included a `tools&techniques.adoc` file to help exploratory testers do their job, and made some notes in there as an example. This is a living document, and will therefore grow as more knowledge is shared/added (e.g. with more information around negative and boundary testing than I've had time to put in there).
+These can also be [viewed on the GitHub repo](https://github.com/safebear/qatestexercise/blob/master/docs/exploratory_tests/guides/tools%26techniques.adoc).
+
+Or in the folder: 
+
+`docs > exploratory_tests > guides` 
+
+The `tools&techniques.adoc` file aims to help exploratory testers do their job, and made some notes in there as an example. This is a living document, and will therefore grow as more knowledge is shared/added (e.g. with more information around negative and boundary testing than I've had time to put in there).
 
 ### Why AsciiDoc?
 

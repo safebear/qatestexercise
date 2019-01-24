@@ -17,9 +17,8 @@ context('delete computer', () => {
       it('delete a computer', () => {
 
         cy.fixture('computerA').then((computer) => {
-            // Filter on the computer name 
-            cy.get('#searchbox').type(computer.name);
-            cy.get('#searchsubmit').click();
+            // Filter on the computer
+            cy.filterOnComputer(computer) // this is a helper function I've created in the 'support > commands.js' file
 
             // Click on the computer
             cy.contains(computer.name).click();
