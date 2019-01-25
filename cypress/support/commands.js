@@ -52,3 +52,11 @@ Cypress.Commands.add("createComputer", (computer) => {
         }
     })
 })
+
+// Create a Cypress command to filter on any computer
+Cypress.Commands.add("filterOnComputer", (computer) => {
+
+    cy.get('#searchbox').type(computer.name);
+    cy.get('#searchsubmit').click();
+
+})
