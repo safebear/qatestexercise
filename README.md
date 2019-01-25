@@ -63,6 +63,23 @@ Add more Steps and see these run in the browser also.
 
 As you write your test, it runs in the browser in real time. As you type, you can see if you made any errors or mistakes, or even if the test will pass or fail at any point.
 
+### Reporting and Running from the Command Line (headless)
+
+Close the Cypress test runner. In the terminal, navigate to the root directory of the project and run the following command:
+
+`npx cypress run --reporter mochawesome --spec 'cypress/integration/crud/**/*'`
+
+This will output the results of the CRUD tests into an HTML report. Open the `mochawesome-report` folder (located in the root directory of the project). Open the `mochawesome.html` report in your browser.
+
+### Video recording
+
+After running the above command, navigate to the following folder:
+
+`cypress/videos/crud`
+
+And run the `crud.spec.js.mp4` file to see a video of the headless run.
+
+
 ## Why Cypress?
 
 Cypress is one of a new breed of Test Automation tools that are helping the industry break free from the stranglehold of `selenium`. The tests run in the browser, so you don't need `drivers` or `selenium servers` connecting by the `wire` protocol. They're much faster, much more powerful and incredibly robust and reliable.

@@ -1,3 +1,4 @@
 {
-    "baseUrl": "http://computer-database.herokuapp.com"
+    "baseUrl": "http://computer-database.herokuapp.com",
+    "reporter": "mochawesome"
 }

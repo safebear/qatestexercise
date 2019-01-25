@@ -78,3 +78,27 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+
+# Cypress generated
+.tmp
+.sass-cache
+.DS_Store
+npm-debug.log
+tmp
+.projects
+*.orig
+
+screenshots
+videos
+out.js
+
+# Mochawesome
+*.log
+node_modules/
+mochawesome-reports/
+mochawesome-report/
+_site/
+coverage/
+.nyc_output/
+dist/
